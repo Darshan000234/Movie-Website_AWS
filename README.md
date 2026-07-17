@@ -109,31 +109,31 @@ movie-website/
 
 ## Amazon S3 Bucket
 
-![Amazon S3](Screenshot%202026-07-17%20100316.png)
+![Amazon S3](images/Screenshot%202026-07-17%20100316.png)
 
 ---
 
 ## Project Files
 
-![Project Files](Screenshot%202026-07-17%20100343.png)
+![Project Files](iamges/Screenshot%202026-07-17%20100343.png)
 
 ---
 
 ## Home Page
 
-![Home Page](Screenshot%202026-07-17%20100523.png)
+![Home Page](iamges/Screenshot%202026-07-17%20100523.png)
 
 ---
 
 ## Trailer Popup
 
-![Trailer Popup](Screenshot%202026-07-17%20100540.png)
+![Trailer Popup](images/Screenshot%202026-07-17%20100540.png)
 
 ---
 
 ## EC2 Instance
 
-![EC2 Instance](Screenshot%202026-07-17%20100552.png)
+![EC2 Instance](images/Screenshot%202026-07-17%20100552.png)
 
 # 🎯 Learning Outcomes
 
