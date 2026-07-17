@@ -115,13 +115,13 @@ movie-website/
 
 ## Project Files
 
-![Project Files](iamges/Screenshot%202026-07-17%20100343.png)
+![Project Files](images/Screenshot%202026-07-17%20100343.png)
 
 ---
 
 ## Home Page
 
-![Home Page](iamges/Screenshot%202026-07-17%20100523.png)
+![Home Page](images/Screenshot%202026-07-17%20100523.png)
 
 ---
 
