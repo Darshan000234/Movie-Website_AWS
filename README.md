@@ -1,160 +1,170 @@
-# 🎬 AWS Movie Streaming Website
+# 🎬 Movie Streaming Website on AWS EC2
 
-A responsive Movie Streaming Website hosted on **Amazon EC2** with movie posters and trailer videos stored in **Amazon S3**.
-
-Users can browse movie posters and watch trailers inside a popup without leaving the page.
+A responsive movie streaming website hosted on an **Amazon EC2** instance. Movie posters and trailer videos are stored in **Amazon S3**, while the website is served from an Apache web server running on Ubuntu.
 
 ---
 
-# Features
+## 📌 Project Overview
 
-- Responsive Movie Gallery
-- 5 Movie Posters
-- 5 Trailer Videos
-- Popup Video Player
-- Close Button to Exit Trailer
-- Posters and Videos stored in Amazon S3
-- Website hosted on Amazon EC2
+This project demonstrates how to host a static website on an AWS EC2 instance and integrate media files stored in Amazon S3.
+
+The website displays five movie posters. Clicking the **Play Trailer** button opens the corresponding trailer in a popup video player with a **Close** button.
 
 ---
 
-# Technologies Used
+## 🚀 Features
 
-- HTML
-- CSS
-- JavaScript
+- Responsive movie gallery
+- Hosted on Amazon EC2
+- Movie posters stored in Amazon S3
+- Trailer videos stored in Amazon S3
+- Popup video player
+- Close button to exit trailer
+- Modern dark-themed UI
+
+---
+
+## 🛠 Technologies Used
+
 - Amazon EC2
 - Amazon S3
+- Ubuntu
+- Apache2
+- HTML5
+- CSS3
+- JavaScript
 
 ---
 
-# Movies Included
-
-- Interstellar
-- Obsession
-- Drishyam
-- The Punisher: One Last Kill
-- Train to Busan
-
----
-
-# AWS Architecture
+# ☁️ AWS Architecture
 
 ```
                 User
                   │
                   ▼
-          Amazon EC2 Instance
-          (Hosts Website)
+        Amazon EC2 (Ubuntu + Apache)
                   │
-                  │ Requests Images & Videos
                   ▼
-             Amazon S3 Bucket
-      (Stores Posters & Trailers)
+        Website (HTML/CSS/JavaScript)
+                  │
+        ┌─────────┴─────────┐
+        ▼                   ▼
+ Amazon S3 Bucket      Amazon S3 Bucket
+(Movie Posters)        (Trailer Videos)
 ```
 
 ---
 
-# Project Workflow
+# 📂 Project Structure
 
 ```
-Upload Posters & Trailers
-           │
-           ▼
-     Amazon S3 Bucket
-           │
-           ▼
-Website Hosted on Amazon EC2
-           │
-           ▼
- User Opens Website
-           │
-           ▼
- Click "Play Trailer"
-           │
-           ▼
- Popup Opens
-           │
-           ▼
- Video Streams Directly From S3
+movie-website/
+│
+├── index.html
+├── style.css
+├── app.js
+│
+├── 1.jpg
+├── 2.jpg
+├── 3.jpg
+├── 4.jpg
+├── 5.jpg
+│
+├── trailer1.mp4
+├── trailer2.mp4
+├── trailer3.mp4
+├── trailer4.mp4
+├── trailer5.mp4
+│
+└── README.md
 ```
 
 ---
 
-# Project Screenshots
+# 🎥 Movies Included
+
+| Poster | Movie |
+|---------|-----------------------------|
+| 1 | Interstellar |
+| 2 | Obsession |
+| 3 | Drishyam |
+| 4 | The Punisher: One Last Kill |
+| 5 | Train to Busan |
+
+---
+
+# ⚙️ Workflow
+
+1. User opens the Movie Website.
+2. Website is hosted on Amazon EC2 using Apache.
+3. Posters are loaded from Amazon S3.
+4. User clicks **Play Trailer**.
+5. JavaScript opens a popup.
+6. Trailer video is streamed directly from Amazon S3.
+7. User clicks **Close** to exit the popup.
+
+---
+
+# 📸 Project Screenshots
 
 ## Amazon S3 Bucket
 
-![S3 Bucket](images/s3-bucket.png)
+![Amazon S3](Screenshot%202026-07-17%20100316.png)
 
 ---
 
 ## Project Files
 
-![Project Files](images/project-files.png)
+![Project Files](Screenshot%202026-07-17%20100343.png)
 
 ---
 
-## Homepage
+## Home Page
 
-![Homepage](images/homepage.png)
+![Home Page](Screenshot%202026-07-17%20100523.png)
 
 ---
 
 ## Trailer Popup
 
-![Trailer Popup](images/trailer-popup.png)
+![Trailer Popup](Screenshot%202026-07-17%20100540.png)
 
 ---
 
 ## EC2 Instance
 
-![EC2](images/ec2-instance.png)
+![EC2 Instance](Screenshot%202026-07-17%20100552.png)
 
 ---
 
-# S3 Bucket Structure
-
-```
-1.jpg
-2.jpg
-3.jpg
-4.jpg
-5.jpg
-
-trailer1.mp4
-trailer2.mp4
-trailer3.mp4
-trailer4.mp4
-trailer5.mp4
-```
-
----
-
-# Deployment Steps
-
-1. Launch an Amazon EC2 Instance.
-2. Install Apache Web Server.
-3. Upload project files to the EC2 instance.
-4. Upload posters and trailer videos to Amazon S3.
-5. Make S3 objects publicly accessible.
-6. Update image and video URLs in JavaScript.
-7. Access the website using the EC2 Public IP.
-
----
-
-# Learning Outcomes
+# 🎯 Learning Outcomes
 
 - Hosting a website on Amazon EC2
+- Configuring Apache Web Server
 - Using Amazon S3 for media storage
-- Integrating S3 resources with a web application
-- Building a responsive movie gallery
-- Implementing popup video playback using JavaScript
+- Integrating S3 with JavaScript
+- Working with popup modals
+- Deploying a cloud-based web application
 
 ---
 
-# Author
+# 👨‍💻 Author
 
 **Darshan Desale**
 
-AWS Movie Streaming Website Project
+AWS with Python Student
+
+---
+
+# 🙏 Acknowledgements
+
+Special thanks to:
+
+- **Mr. Vishal Bafana** for his guidance and mentorship.
+- **Symbiosis Institute of Technology, Pune** for conducting the **AWS with Python** course.
+- **Capgemini** for offering the training program.
+- **R. C. Patel Placement Department** for recommending this industry-oriented course.
+
+---
+
+## ⭐ If you like this project, consider giving it a Star.
