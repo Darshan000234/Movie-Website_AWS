@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Deploy status strip -->
+<div class="deploy-strip">
+    <span class="dot"></span> Live build &middot; Lambda + S3 pipeline &middot; v2.0
+</div>
+
+<header class="marquee">
+    <div class="marquee-bulbs top" aria-hidden="true"></div>
+    <div class="marquee-inner">
+        <p class="eyebrow">Now Showing</p>
+        <h1>Movie Gallery</h1>
+        <p class="subtitle">Trailers for the films worth staying up for</p>
+    </div>
+    <div class="marquee-bulbs bottom" aria-hidden="true"></div>
+</header>
+
+<section class="gallery">
+
+    <div class="card">
+        <div class="poster-frame">
+            <span class="badge">Sci-Fi</span>
+            <img src="https://darshan-desale-s3-bucket.s3.ap-south-1.amazonaws.com/1.jpg" alt="Interstellar">
+        </div>
+        <div class="sprockets" aria-hidden="true"></div>
+        <div class="card-body">
+            <div class="movie-title">Interstellar</div>
+            <button class="play-btn" data-trailer="https://darshan-desale-s3-bucket.s3.ap-south-1.amazonaws.com/trailer1.mp4">
+                <span class="stub-left">A</span>
+                <span class="stub-label">&#9654; Play Trailer</span>
+                <span class="stub-right">1</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="poster-frame">
+            <span class="badge">Thriller</span>
+            <img src="https://darshan-desale-s3-bucket.s3.ap-south-1.amazonaws.com/2.jpg" alt="Obession">
+        </div>
+        <div class="sprockets" aria-hidden="true"></div>
+        <div class="card-body">
+            <div class="movie-title">Obession</div>
+            <button class="play-btn" data-trailer="https://darshan-desale-s3-bucket.s3.ap-south-1.amazonaws.com/trailer2.mp4">
+                <span class="stub-left">A</span>
+                <span class="stub-label">&#9654; Play Trailer</span>
+                <span class="stub-right">2</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="poster-frame">
+            <span class="badge">Drama</span>
+            <img src="https://darshan-desale-s3-bucket.s3.ap-south-1.amazonaws.com/3.jpg" alt="Dridam">
+        </div>
+        <div class="sprockets" aria-hidden="true"></div>
+        <div class="card-body">
+            <div class="movie-title">Dridam</div>
+            <button class="play-btn" data-trailer="https://darshan-desale-s3-bucket.s3.ap-south-1.amazonaws.com/trailer3.mp4">
+                <span class="stub-left">A</span>
+                <span class="stub-label">&#9654; Play Trailer</span>
+                <span class="stub-right">3</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="poster-frame">
+            <span class="badge">Action</span>
+            <img src="https://darshan-desale-s3-bucket.s3.ap-south-1.amazonaws.com/4.jpg" alt="The Punisher: One Last Kill">
+        </div>
+        <div class="sprockets" aria-hidden="true"></div>
+        <div class="card-body">
+            <div class="movie-title">The Punisher: One Last Kill</div>
+            <button class="play-btn" data-trailer="https://darshan-desale-s3-bucket.s3.ap-south-1.amazonaws.com/trailer4.mp4">
+                <span class="stub-left">A</span>
+                <span class="stub-label">&#9654; Play Trailer</span>
+                <span class="stub-right">4</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="poster-frame">
+            <span class="badge">Horror</span>
+            <img src="https://darshan-desale-s3-bucket.s3.ap-south-1.amazonaws.com/5.jpg" alt="Train to Busan">
+        </div>
+        <div class="sprockets" aria-hidden="true"></div>
+        <div class="card-body">
+            <div class="movie-title">Train to Busan</div>
+            <button class="play-btn" data-trailer="https://darshan-desale-s3-bucket.s3.ap-south-1.amazonaws.com/trailer5.mp4">
+                <span class="stub-left">A</span>
+                <span class="stub-label">&#9654; Play Trailer</span>
+                <span class="stub-right">5</span>
+            </button>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>&copy; 2025 Movie Gallery. All rights reserved.</p>
+</footer>
+
+<!-- Popup -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <button id="closeBtn">&times; Close</button>
+        <video id="video" controls autoplay>
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
